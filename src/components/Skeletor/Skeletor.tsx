@@ -59,12 +59,12 @@ const Skeletor = defineComponent({
     ));
 
     const classes = computed(() => ({
-      'vue-skeletor': true,
-      'vue-skeletor--rect': isRect.value,
-      'vue-skeletor--text': isText.value,
-      'vue-skeletor--shimmerless': isShimmerless.value,
-      'vue-skeletor--circle': props.circle,
-      'vue-skeletor--pill': props.pill,
+      'v-skeletor': true,
+      'v-skeletor--rect': isRect.value,
+      'v-skeletor--text': isText.value,
+      'v-skeletor--shimmerless': isShimmerless.value,
+      'v-skeletor--circle': props.circle,
+      'v-skeletor--pill': props.pill,
     }));
 
     const style = computed(() => {
