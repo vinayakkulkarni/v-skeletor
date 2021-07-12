@@ -1,6 +1,6 @@
 {
   "name": "v-skeletor",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Vue 2 Skeleton Loading component.",
   "main": "dist/v-skeletor.cjs.js",
   "module": "dist/v-skeletor.esm.js",
