@@ -1,9 +1,12 @@
-export function convertToUnit (str: string | number | null | undefined, unit = 'px'): string | undefined {
+export function convertToUnit(
+  str: string | number | null | undefined,
+  unit = 'px',
+): string | undefined {
   if (str == null || str === '') {
-    return undefined
+    return undefined;
   } else if (isNaN(str as number)) {
-    return String(str)
+    return String(str);
   } else {
-    return `${Number(str)}${unit}`
+    return `${Number(str)}${unit}`;
   }
 }

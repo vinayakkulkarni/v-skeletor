@@ -1,7 +1,7 @@
-import './Skeletor.scss';
-import { defineComponent, CSSProperties, computed, h } from 'vue';
-import { convertToUnit } from '../../helpers';
+import { computed, defineComponent, h } from '@vue/composition-api';
 import useSkeletor from '../../composables/use-skeletor';
+import { convertToUnit } from '../../helpers';
+import './Skeletor.scss';
 
 const Skeletor = defineComponent({
   name: 'Skeletor',
@@ -68,7 +68,7 @@ const Skeletor = defineComponent({
     }));
 
     const style = computed(() => {
-      const _style: CSSProperties = {};
+      const _style: {width?: any, height?: any} = {};
 
       if(props.size) {
         const size = convertToUnit(props.size);

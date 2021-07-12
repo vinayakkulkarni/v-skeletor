@@ -1,10 +1,10 @@
-import { 
-  AllowedComponentProps, 
+import {
+  AllowedComponentProps,
+  App,
   ComponentCustomProps,
-  VNodeProps,
   Plugin,
-  App
-} from 'vue';
+  VNodeProps,
+} from '@vue/composition-api';
 
 export interface SkeletorOptions {
   shimmer?: boolean;
@@ -27,5 +27,8 @@ export interface SkeletorProps {
 }
 
 export const Skeletor: new () => {
-  $props: AllowedComponentProps & ComponentCustomProps & VNodeProps & SkeletorProps;
+  $props: AllowedComponentProps &
+    ComponentCustomProps &
+    VNodeProps &
+    SkeletorProps;
 };

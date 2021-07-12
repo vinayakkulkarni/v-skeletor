@@ -1,11 +1,15 @@
-# 💀 Vue Skeletor (Vue 3 Skeleton Loading component)
+# 💀 V-Skeletor (Vue 3 Skeleton Loading component)
 
-Vue 3 adaptive skeleton loading component that will match your typography. 
+<!-- Section for badges -->
+![ci](https://github.com/vinayakkulkarni/v-skeletor/workflows/ci/badge.svg)
+![Ship js trigger](https://github.com/vinayakkulkarni/v-skeletor/workflows/Ship%20js%20trigger/badge.svg)
+
+Vue 2 adaptive skeleton loading component that will match your typography based on [`vue-skeletor`](https://github.com/DarkC0der11/vue-skeletor)
 
 [Codesandbox Card Example](https://codesandbox.io/s/epic-ishizaka-nl9z3?file=/src/App.vue) 
 
 ## Installation
-`npm install vue-skeletor -S`
+`npm install v-skeletor -S`
 
 ## Why adaptive skeletons?
 Skeletons are used to mimic how the real content would look, so in order to create nice skeleton you would have to manually create squares, circles and position/size them to match your real component and keep it updated whenever you change it. 
@@ -61,14 +65,14 @@ And that's it, the text skeletons will automatically catch up with the styles yo
 First import the Skeletor styles
 
 ```js
-  import 'vue-skeletor/dist/vue-skeletor.css';
+  import 'v-skeletor/dist/v-skeletor.css';
 ```
 
 Option 1 - Register Locally 
 
 ```js
   // SomeComponent.vue
-  import { Skeletor } from 'vue-skeletor';
+  import { Skeletor } from 'v-skeletor';
 
   export default {
     components: { Skeletor }
@@ -79,7 +83,7 @@ Option 2 - Register Globally
 
 ```js
   // main.js
-  import { Skeletor } from 'vue-skeletor';
+  import { Skeletor } from 'v-skeletor';
 
   app.component(Skeletor.name, Skeletor);
 ```
@@ -94,7 +98,7 @@ usage.
 
 ```js
   // Import the plugin
-  import VueSkeletor from 'vue-skeletor';
+  import VueSkeletor from 'v-skeletor';
 
   // Register plugin in your vue app
   app.use(VueSkeletor, {
@@ -107,7 +111,7 @@ When you install skeletor as Plugin it `provides` global config to your app and 
 
 ```js
   // Import the composable
-  import { useSkeletor } from 'vue-skeletor';
+  import { useSkeletor } from 'v-skeletor';
 
   export default defineComponent({
     setup() {
@@ -209,7 +213,7 @@ Skeletor uses bem classes, that you can use to override your skeletons color and
 
 ```css
   /* Static background */
-  .vue-skeletor {
+  .v-skeletor {
     background-color: #ccc;
   }
 
@@ -218,7 +222,7 @@ Skeletor uses bem classes, that you can use to override your skeletons color and
     from light to dark, you can target skeletons under 
     some global theme class or attribute e.g. 
   */
-  [data-theme="dark"] .vue-skeletor {
+  [data-theme="dark"] .v-skeletor {
     background: #363636;
   }
 
@@ -227,13 +231,13 @@ Skeletor uses bem classes, that you can use to override your skeletons color and
     By default skeletor uses fully rounded style for text
     type skeletons, you can change that as you like
   */
-  .vue-skeletor--text {
+  .v-skeletor--text {
     /* Completely square style skeletons */
     border-radius: 0;
   }
 
   /* Shimmer */
-  .vue-skeletor:not(.vue-skeletor--shimmerless):after {
+  .v-skeletor:not(.v-skeletor--shimmerless):after {
     /* 
       Change the shimmer color, its a simple 90 deg 
       linear horizontal gradient, adjust it however
@@ -264,3 +268,14 @@ Skeletor uses bem classes, that you can use to override your skeletons color and
     }
   }
 ```
+
+## Contributing
+
+_Note_: Commits & PRs will be allowed only if the commit messages & PR titles follow a particular standard format, read more about it [here](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum)
+
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a new branch from the default branch, add commits, and [open a pull request](https://github.com/vinayakkulkarni/v-skeletor/compare)
+
+
+## License
+
+MIT &copy; Vinayak Kulkarni

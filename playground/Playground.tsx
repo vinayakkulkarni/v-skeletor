@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue';
+import { defineComponent } from '@vue/composition-api';
 import { Skeletor, useSkeletor } from '../src';
 import './index.scss';
 

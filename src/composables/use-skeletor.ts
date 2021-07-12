@@ -1,12 +1,11 @@
-import { inject, warn } from 'vue';
-import { SkeletorSymbol } from '../constants';
+import { inject, warn } from '@vue/composition-api';
 import { SkeletorOptions } from 'types';
-import { DEFAULT_OPTIONS } from '../constants';
+import { DEFAULT_OPTIONS, SkeletorSymbol } from '../constants';
 
 export default function useSkeletor() {
   const skeletor = inject<SkeletorOptions>(SkeletorSymbol, DEFAULT_OPTIONS);
 
-  if(!skeletor) {
+  if (!skeletor) {
     warn('Skeletor is not installed on this Vue application.');
   }
 
