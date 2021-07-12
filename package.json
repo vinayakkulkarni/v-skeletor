@@ -11,7 +11,7 @@
     "bundle": "rollup -c build/rollup.config.js",
     "bundle:min": "rollup -c build/rollup.min.config.js",
     "lint": "npm run lint:eslint && npm run lint:prettier && npm run lint:css",
-    "lintfix": "npm run lint:eslint:fix && npm run lint:prettier:fix",
+    "lintfix": "npm run lint:eslint:fix && npm run lint:prettier:fix && npm run lint:css:fix",
     "lint:js": "npm run lint:eslint && npm run lint:prettier",
     "lint:eslint": "eslint \"{,!(node_modules|dist)/**/}*.{js,ts,vue}\" --ignore-path .gitignore",
     "lint:eslint:fix": "eslint --fix \"{,!(node_modules|dist)/**/}*.{js,ts,vue}\" --ignore-path .gitignore",
