@@ -1,4 +1,4 @@
-# 💀 V-Skeletor (Vue 3 Skeleton Loading component)
+# 💀 V-Skeletor (Vue 2 Skeleton Loading component)
 
 <!-- Section for badges -->
 ![ci](https://github.com/vinayakkulkarni/v-skeletor/workflows/ci/badge.svg)
