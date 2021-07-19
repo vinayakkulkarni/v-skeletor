@@ -1,3 +1,12 @@
+## [0.0.2](https://github.com/vinayakkulkarni/v-skeletor/compare/v0.0.1...v0.0.2) (2021-07-19)
+
+
+### Bug Fixes
+
+* update docs ([b532037](https://github.com/vinayakkulkarni/v-skeletor/commit/b532037ff7231a5a5b3d0f9e92166cf8cedb623c))
+
+
+
 ## 0.0.1 (2021-07-12)
 
 
