@@ -10,13 +10,17 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
     lib: ['es2020'],
+    ecmaFeatures: {
+      jsx: true,
+    },
     extraFileExtensions: ['.vue'],
   },
-  // required to lint *.vue files
-  plugins: ['vue', 'prettier'],
+  plugins: ['vue', 'jsdoc', '@typescript-eslint', 'prettier'],
   extends: [
     'plugin:vue/recommended',
     'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:jsdoc/recommended',
     'prettier',
   ],
   // add your custom rules here
