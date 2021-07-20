@@ -5,6 +5,7 @@ import {
   Plugin,
   VNodeProps,
 } from '@vue/composition-api';
+import { VueConstructor } from 'vue';
 
 export interface SkeletorOptions {
   shimmer?: boolean;
@@ -26,9 +27,18 @@ export interface SkeletorProps {
   height?: string | number;
 }
 
-export const Skeletor: new () => {
-  $props: AllowedComponentProps &
-    ComponentCustomProps &
-    VNodeProps &
-    SkeletorProps;
+type Props = AllowedComponentProps &
+  ComponentCustomProps &
+  VNodeProps &
+  SkeletorProps;
+
+// export const Skeletor: new () => {
+//   $props: AllowedComponentProps &
+//     ComponentCustomProps &
+//     VNodeProps &
+//     SkeletorProps;
+// };
+
+export const Skeletor: VueConstructor<Vue> = {
+  $props: Props,
 };
