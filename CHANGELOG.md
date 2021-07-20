@@ -1,3 +1,13 @@
+## [0.0.3](https://github.com/vinayakkulkarni/v-skeletor/compare/v0.0.2...v0.0.3) (2021-07-20)
+
+
+### Bug Fixes
+
+* **deps:** bump internal devDeps ([070bdaf](https://github.com/vinayakkulkarni/v-skeletor/commit/070bdaff551f02a6dbdfa4a7313da10f528e6eaa))
+* minor housekeeping of the pkg ([353b97c](https://github.com/vinayakkulkarni/v-skeletor/commit/353b97cb7e02b7b3069ca717c345a1d601664240))
+
+
+
 ## [0.0.2](https://github.com/vinayakkulkarni/v-skeletor/compare/v0.0.1...v0.0.2) (2021-07-19)
 
 
