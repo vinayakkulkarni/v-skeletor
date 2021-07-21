@@ -1,3 +1,16 @@
+## [0.0.4](https://github.com/vinayakkulkarni/v-skeletor/compare/v0.0.3...v0.0.4) (2021-07-21)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/setup-node from 2.2.0 to 2.3.0 ([aac2378](https://github.com/vinayakkulkarni/v-skeletor/commit/aac23783f14b54e9dd0fc6ed5f0fa3175678c408))
+* **deps:** bump internal devDeps ([a298574](https://github.com/vinayakkulkarni/v-skeletor/commit/a298574e8d76f37131b4b09a2d88304802ada91b))
+* shims for Vue ([f90296f](https://github.com/vinayakkulkarni/v-skeletor/commit/f90296ff15a0e2db2ad4f8165f8040435b82414f))
+* **ts:** update tsconfig 🥳 ([54d6963](https://github.com/vinayakkulkarni/v-skeletor/commit/54d6963622b7cab2c98be6f480bad1f242bb6ace))
+* update eslint config 👀 ([69102be](https://github.com/vinayakkulkarni/v-skeletor/commit/69102be2fd593ff4370d3318a4b9632cce1f8a5d))
+
+
+
 ## [0.0.3](https://github.com/vinayakkulkarni/v-skeletor/compare/v0.0.2...v0.0.3) (2021-07-20)
 
 
