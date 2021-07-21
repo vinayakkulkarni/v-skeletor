@@ -1,6 +1,6 @@
 {
   "name": "v-skeletor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Vue 2 Skeleton Loading component.",
   "files": [
     "dist",
