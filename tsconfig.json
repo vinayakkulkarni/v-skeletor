@@ -1,15 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "es2015",
-    "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
+    "target": "esnext",
+    "module": "es2020",
     "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
     "lib": [
       "esnext",
       "dom",
@@ -17,21 +11,28 @@
       "scripthost",
       "esnext.asynciterable"
     ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "allowJs": true,
     "sourceMap": true,
+    "strict": true,
     "noEmit": false,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./src/*"]
     },
+    "types": [
+      "@types/node",
+    ]
   },
-  "types": [
-    "@types/node"
-  ],
   "include": [
-    "src/**/*.ts",
-    "src/**/*.vue"
+    "src",
+    "build",
+    "shims"
   ],
   "exclude": [
     "dist",

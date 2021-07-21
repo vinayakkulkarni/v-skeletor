@@ -1,5 +1,8 @@
 declare module '*.vue' {
-  import type { DefineComponent } from '@vue/composition-api';
-  const component: DefineComponent;
+  import { defineComponent } from '@vue/composition-api';
+  import Vue, { VueConstructor } from 'vue';
+  const component: ReturnType<typeof defineComponent> & {
+    install(app: VueConstructor<Vue>): void;
+  };
   export default component;
 }
