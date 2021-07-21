@@ -30,6 +30,7 @@ export default {
     sourcemap: true,
     banner,
     globals: {
+      vue: 'vue',
       '@vue/composition-api': 'vueCompositionApi',
     },
   },
@@ -45,7 +46,7 @@ export default {
       exclude: 'node_modules/**',
     }),
     commonjs({ extensions, exclude: 'src/**' }),
-    vue({ isWebComponent: true, template: { isProduction: true } }),
+    vue({ css: false }),
     scss({
       output: 'dist/v-skeletor.css',
     }),
