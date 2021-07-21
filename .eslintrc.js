@@ -2,8 +2,8 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    es6: true,
     node: true,
+    es6: true,
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -12,6 +12,7 @@ module.exports = {
     lib: ['es2020'],
     ecmaFeatures: {
       jsx: true,
+      tsx: true,
     },
     extraFileExtensions: ['.vue'],
   },
