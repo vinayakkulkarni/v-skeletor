@@ -77,7 +77,7 @@
     "@vinayakkulkarni/prettier-config-vue": "^1.0.0",
     "@vue/babel-plugin-jsx": "^1.0.6",
     "@vue/composition-api": "^1.0.3",
-    "eslint": "^7.31.0",
+    "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jsdoc": "^36.0.6",
     "eslint-plugin-prettier": "^4.0.0",
